@@ -1,0 +1,194 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--zumthor: #E0E8FF;
+	--persian-blue: #3829E0;
+	--persian-blue2: #3829E022;
+	--zircon:	#F5F7FF;
+	--bermuda-gray: #7280A7;
+	--cloud-burst: #1F2F56;
+	--cornflower: #766CF1;
+	--white: #FFFFFF;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--cloud-burst);
+	font-weight: 900;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.text-bermuda-gray {
+	color: var(--bermuda-gray);
+}
+
+.site-main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	padding: 23px 23px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--zumthor);
+	background-image: url('./images/pattern-background-mobile.svg');
+}
+
+.card {
+	width: 100%;
+	max-width: 450px;
+	border-radius: 20px;
+	background-color: var(--white);
+	box-shadow: 0 20px 40px 5px var(--persian-blue2);
+}
+
+.card-desc {
+	color: var(--bermuda-gray);
+}
+
+.card-header-img {
+	display: block;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.card-body {
+	padding: 37px 26px;
+	text-align: center;
+}
+
+.card-title {
+	font-size: 23px;
+	line-height: 1;
+	margin: 0 0 20px;
+}
+
+.card-desc {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.card-plan {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 13px 0;
+	line-height: 1.5;
+}
+
+.card-plan-icon,
+.card-plan-price {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.card-plan-icon {
+	margin-right: 15px;
+}
+
+.card-plan-price {
+	font-size: 14px;
+}
+
+.card-plan-link {
+	font-size: 14px;
+	font-weight: 900;
+	color: var(--persian-blue);
+	transition: all 0.5 ease;
+}
+
+.card-footer {
+	padding: 0 26px 17px;
+}
+
+.btn {
+	display: block;
+	padding: 17px 24px;
+	font-size: 15px;
+	font-weight: 900;
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 1;
+}
+
+.btn-checkout {
+	color: var(--white);
+	width: 100%;
+	background-color: var(--persian-blue);
+	box-shadow: 0 20px 10px 5px var(--persian-blue2);
+	margin-bottom: 10px;
+	transition: all 0.5 ease-in;
+}
+
+.btn-cancel {
+	color: var(--bermuda-gray);
+}
+
+@media (hover: hover) {
+	.card-plan-link:hover {
+		text-decoration: none;
+		color: var(--cornflower);
+	}
+
+	.btn-checkout:hover {
+		background-color: var(--cornflower);
+	}
+
+	.btn-cancel:hover {
+		color: var(--cloud-burst);
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.site-main {
+		background-size: 100%;
+		background-position: 50% -35%;
+		background-image: url('./images/pattern-background-desktop.svg');
+	}
+
+	.card-body {
+		padding: 51px 56px 41px;
+	}
+
+	.card-desc {
+		line-height: 1.6;
+	}
+
+	.card-plan {
+		padding: 25px 18px 0;
+	}
+
+	.card-plan-price {
+		font-size: 17px;
+	}
+
+	.card-title {
+		font-size: 28px;
+		margin-bottom: 22px;
+	}
+
+	.card-footer {
+		padding: 0 50px 32px;
+	}
+
+	.btn-checkout {
+		margin-bottom: 20px;
+	}
+}
