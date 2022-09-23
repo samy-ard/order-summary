@@ -110,7 +110,7 @@ strong {
 	font-size: 14px;
 	font-weight: 900;
 	color: var(--persian-blue);
-	transition: all 0.5 ease;
+	transition: all 0.5s ease;
 }
 
 .card-footer {
@@ -126,6 +126,7 @@ strong {
 	border-radius: 10px;
 	text-decoration: none;
 	line-height: 1;
+	transition: all 0.5s ease-in;
 }
 
 .btn-checkout {
@@ -134,7 +135,6 @@ strong {
 	background-color: var(--persian-blue);
 	box-shadow: 0 20px 10px 5px var(--persian-blue2);
 	margin-bottom: 10px;
-	transition: all 0.5 ease-in;
 }
 
 .btn-cancel {
